@@ -38,5 +38,9 @@ for x in wireOne:
     if x in wireTwo:
         crosses.append(x)
 
-print(crosses)
+distances = []
+for x in crosses:
+    distances.append(abs(x[0]) + abs(x[1]))
+
+print(min(distances))
         
